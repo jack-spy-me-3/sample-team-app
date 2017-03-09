@@ -1,6 +1,12 @@
 Rails.application.routes.draw do
-  get "/", to: "pages#index"
+
+  root to: "tables#index"
+
+  get "/tables", to: "tables#index"
+
+
+  get "/somethings", to: "somethings#index"
 
   get "/empanada", to: "empanadas#show"
 
-  end
+end
